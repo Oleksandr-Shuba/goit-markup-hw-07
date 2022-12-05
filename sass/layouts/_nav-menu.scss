@@ -10,14 +10,13 @@
     letter-spacing: 0.02em;
     color: var(--text-main-color);
     display: block;
-
+    &:hover,
+    &:focus,
+    &.active {
+    color: var(--blue);
+    font-size: 14px;
 }
-
-.nav-list-item {
-    position: relative;
-}
-
-.link.active::after {
+    &.active::after {
     content: '';
     width: 100%;
     height: 4px;
@@ -28,10 +27,12 @@
     left: 0px;
 }
 
-
-.link:hover,
-.link:focus,
-.link.active {
-    color: var(--blue);
-    font-size: 14px;
 }
+
+.nav-list-item {
+    position: relative;
+}
+
+
+
+

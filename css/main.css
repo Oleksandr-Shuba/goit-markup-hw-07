@@ -115,53 +115,20 @@ a {
   color: #000000;
 }
 
-.header {
-  border: 1px solid #ECECEC;
-}
-
 .flex {
   display: flex;
   align-items: center;
 }
 
+.header {
+  border: 1px solid #ECECEC;
+}
+
 .header .contact-list {
   display: flex;
   align-items: center;
   gap: 50px;
   margin-left: auto;
-}
-
-.header .contact-list-item {
-  padding: 32px 0px;
-}
-
-.contact .icon-envelope,
-.contact .icon-smartphone {
-  fill: var(--grey);
-  margin-right: 10px;
-}
-
-.contact:hover .icon-envelope,
-.contact:focus .icon-envelope,
-.contact:hover .icon-smartphone,
-.contact:focus .icon-smartphone {
-  fill: var(--blue);
-}
-
-.contact {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--grey);
-  transition: fill var(--trans-n-250), background-color var(--trans-n-250);
-  display: flex;
-  align-items: center;
-}
-
-.contact:hover,
-.contact:focus {
-  color: var(--blue);
 }
 
 .header .contact-list {
@@ -175,6 +142,20 @@ a {
   padding: 32px 0px;
 }
 
+.contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--grey);
+  transition: fill var(--trans-n-250), background-color var(--trans-n-250);
+  display: flex;
+  align-items: center;
+}
+.contact:hover, .contact:focus {
+  color: var(--blue);
+}
+
 .contact .icon-envelope,
 .contact .icon-smartphone {
   fill: var(--grey);
@@ -186,22 +167,6 @@ a {
 .contact:hover .icon-smartphone,
 .contact:focus .icon-smartphone {
   fill: var(--blue);
-}
-
-.contact {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--grey);
-  transition: fill var(--trans-n-250), background-color var(--trans-n-250);
-  display: flex;
-  align-items: center;
-}
-
-.contact:hover,
-.contact:focus {
-  color: var(--blue);
 }
 
 .soc-item {
@@ -220,18 +185,14 @@ a {
   justify-content: center;
   transition: color var(--trans-n-250), background-color var(--trans-n-250);
 }
+.soc-link:hover, .soc-link:focus {
+  background-color: var(--blue);
+}
 
 .soc-icon {
   fill: #AFB1B8;
 }
-
-.soc-link:hover,
-.soc-link:focus {
-  background-color: var(--blue);
-}
-
-.soc-link:hover .soc-icon,
-.soc-link:focus .soc-icon {
+.soc-link:hover .soc-icon, .soc-link:focus .soc-icon {
   fill: var(--white);
 }
 
@@ -248,11 +209,10 @@ a {
   color: var(--text-main-color);
   display: block;
 }
-
-.nav-list-item {
-  position: relative;
+.link:hover, .link:focus, .link.active {
+  color: var(--blue);
+  font-size: 14px;
 }
-
 .link.active::after {
   content: "";
   width: 100%;
@@ -264,11 +224,8 @@ a {
   left: 0px;
 }
 
-.link:hover,
-.link:focus,
-.link.active {
-  color: var(--blue);
-  font-size: 14px;
+.nav-list-item {
+  position: relative;
 }
 
 .footer .container {
@@ -378,7 +335,6 @@ a {
   background-color: var(--dark-grey);
   transition: border-color var(--trans-n-250), outline var(--trans-n-250);
 }
-
 .footer-input::-moz-placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -388,7 +344,6 @@ a {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .footer-input:-ms-input-placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -398,7 +353,6 @@ a {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
 .footer-input::placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -446,11 +400,10 @@ a {
   color: var(--text-main-color);
   display: block;
 }
-
-.nav-list-item {
-  position: relative;
+.link:hover, .link:focus, .link.active {
+  color: var(--blue);
+  font-size: 14px;
 }
-
 .link.active::after {
   content: "";
   width: 100%;
@@ -462,11 +415,8 @@ a {
   left: 0px;
 }
 
-.link:hover,
-.link:focus,
-.link.active {
-  color: var(--blue);
-  font-size: 14px;
+.nav-list-item {
+  position: relative;
 }
 
 .top-banner h1 {
@@ -474,18 +424,18 @@ a {
 }
 
 .top-banner {
-  padding: 200px 0px;
-  background-color: var(--dark-grey);
-}
-
-.top-banner {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  padding: 200px 0px;
+  background-color: var(--dark-grey);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/index/header-Img.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+.top-banner .btn-blue:hover, .top-banner .btn-blue:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .top-banner .btn-blue {
@@ -500,11 +450,6 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   transition: color var(--trans-n-250), background-color var(--trans-n-250);
-}
-
-.top-banner .btn-blue:hover,
-.top-banner .btn-blue:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .top-banner .top-banner-title {
@@ -646,12 +591,6 @@ a {
   border-radius: 4px;
 }
 
-.customers-link:hover,
-.customers-link:focus {
-  border-color: var(--blue);
-  fill: var(--blue);
-}
-
 .customers-link {
   border-radius: 4px;
   border: 1px solid #AFB1B8;
@@ -660,13 +599,9 @@ a {
   padding: 16px 32px;
   transition: fill var(--trans-n-250), background-color var(--trans-n-250);
 }
-
-.menu .btn-grey:hover,
-.menu .btn-grey:focus,
-.menu .btn-grey.active {
-  background-color: var(--blue);
-  color: var(--white);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+.customers-link:hover, .customers-link:focus {
+  border-color: var(--blue);
+  fill: var(--blue);
 }
 
 .menu {
@@ -674,6 +609,11 @@ a {
   display: flex;
   gap: 8px;
   justify-content: center;
+}
+.menu .btn-grey:hover, .menu .btn-grey:focus, .menu .btn-grey.active {
+  background-color: var(--blue);
+  color: var(--white);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .menu .btn {
@@ -711,17 +651,11 @@ a {
   gap: 30px;
 }
 
-.project-item:hover,
-.project-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .project-item img {
   display: block;
 }
-
-.project-item:hover .overlay {
-  transform: translateY(0);
+.project-item img:hover, .project-item img:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-item-box {
@@ -743,6 +677,9 @@ a {
   transform: translateY(100%);
   transition: transform 250ms linear;
   overflow: auto;
+}
+.project-item:hover .overlay {
+  transform: translateY(0);
 }
 
 .our-projects .project-subtitle {
@@ -829,6 +766,21 @@ a {
   font-size: 12px;
   color: var(--text-main-color);
 }
+.modal-input::-moz-placeholder {
+  font-size: 12px;
+  color: var(--grey);
+}
+.modal-input:-ms-input-placeholder {
+  font-size: 12px;
+  color: var(--grey);
+}
+.modal-input::placeholder {
+  font-size: 12px;
+  color: var(--grey);
+}
+.modal-input:hover, .modal-input:focus {
+  border-color: var(--blue);
+}
 
 .modal-icon {
   position: absolute;
@@ -836,12 +788,6 @@ a {
   top: 50%;
   transform: translateY(-50%);
 }
-
-.modal-input:hover,
-.modal-input:focus {
-  border-color: var(--blue);
-}
-
 .modal-input:focus + .modal-icon {
   fill: var(--blue);
 }
@@ -854,9 +800,7 @@ a {
   resize: none;
   padding: 16px;
 }
-
-.modal-comment:hover,
-.modal-comment:focus {
+.modal-comment:hover, .modal-comment:focus {
   border-color: var(--blue);
 }
 
@@ -908,7 +852,6 @@ a {
   color: var(--blue);
   text-decoration: none;
 }
-
 .agreement-link::after {
   position: absolute;
   content: "";
@@ -945,21 +888,6 @@ a {
   margin-bottom: 20px;
 }
 
-.modal-input::-moz-placeholder {
-  font-size: 12px;
-  color: var(--grey);
-}
-
-.modal-input:-ms-input-placeholder {
-  font-size: 12px;
-  color: var(--grey);
-}
-
-.modal-input::placeholder {
-  font-size: 12px;
-  color: var(--grey);
-}
-
 .modal {
   width: 528px;
   min-height: 581px;
@@ -992,16 +920,12 @@ a {
   transition: color var(--trans-n-250), background-color var(--trans-n-250);
 }
 
-.close-button-icon:hover,
-.close-button-icon:focus {
-  background-color: var(--white);
-}
-
-.close-button-icon:hover,
-.close-button-icon:focus {
-  fill: var(--blue);
-}
-
 .close-button-icon {
   fill: currentColor;
+}
+.close-button-icon:hover, .close-button-icon:focus {
+  background-color: var(--white);
+}
+.close-button-icon:hover, .close-button-icon:focus {
+  fill: var(--blue);
 }/*# sourceMappingURL=main.css.map */

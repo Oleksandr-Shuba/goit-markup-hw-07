@@ -2,19 +2,21 @@
     color: var(--white);
 }
 
-.top-banner {
-    padding: 200px 0px;
-    background-color: var(--dark-grey);
-}
 
 .top-banner {
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
+    padding: 200px 0px;
+    background-color: var(--dark-grey);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/index/header-Img.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    & .btn-blue:hover,
+    & .btn-blue:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}  
 }
 
 
@@ -32,10 +34,7 @@
     transition: color var(--trans-n-250), background-color var(--trans-n-250);
 }
 
-.top-banner .btn-blue:hover,
-.top-banner .btn-blue:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+
 
 
 

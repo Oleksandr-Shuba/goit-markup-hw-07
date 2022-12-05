@@ -1,14 +1,21 @@
-.header .contact-list {
+
+.contact {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--grey);
+    transition: fill var(--trans-n-250), background-color var(--trans-n-250);
     display: flex;
     align-items: center;
-    gap: 50px;
-    margin-left: auto;
+    &:hover,
+    &:focus {
+    color: var(--blue);
+}
+
 
 }
 
-.header .contact-list-item {
-    padding: 32px 0px;
-}
 .contact .icon-envelope,
 .contact .icon-smartphone {
     fill: var(--grey);
@@ -20,20 +27,4 @@
 .contact:hover .icon-smartphone,
 .contact:focus .icon-smartphone {
     fill: var(--blue);
-}
-.contact {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--grey);
-    transition: fill var(--trans-n-250), background-color var(--trans-n-250);
-    display: flex;
-    align-items: center;
-
-}
-
-.contact:hover,
-.contact:focus {
-    color: var(--blue);
 }

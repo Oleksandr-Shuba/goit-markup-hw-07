@@ -13,20 +13,21 @@
     align-items: center;
     justify-content: center;
     transition: color var(--trans-n-250), background-color var(--trans-n-250);
+    &:hover,
+    &:focus {
+    background-color: var(--blue);
+}
 
 }
 
 .soc-icon {
     fill: #AFB1B8;
-}
-
-
-.soc-link:hover,
-.soc-link:focus {
-    background-color: var(--blue);
-}
-
-.soc-link:hover .soc-icon,
-.soc-link:focus .soc-icon {
+    .soc-link:hover &,
+    .soc-link:focus & {
     fill: var(--white);
 }
+}
+
+
+
+

@@ -1,16 +1,18 @@
-.menu .btn-grey:hover,
-.menu .btn-grey:focus,
-.menu .btn-grey.active {
-    background-color: var(--blue);
-    color: var(--white);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+
 
 .menu {
     margin-bottom: 34px;
     display: flex;
     gap: 8px;
     justify-content: center;
+    & .btn-grey:hover,
+    & .btn-grey:focus,
+    & .btn-grey.active {
+    background-color: var(--blue);
+    color: var(--white);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 }
 
 
