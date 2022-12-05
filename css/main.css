@@ -818,11 +818,6 @@ a {
   margin-bottom: 30px;
 }
 
-.modal-check:checked + .checkbox-icon {
-  background-color: var(--blue);
-  border-color: transparent;
-}
-
 .modal-check {
   position: absolute;
   content: "";
@@ -844,6 +839,10 @@ a {
   cursor: pointer;
   border: 2px solid var(--text-main-color);
   transition: color var(--trans-n-250), background-color var(--trans-n-250);
+}
+.modal-check:checked + .checkbox-icon {
+  background-color: var(--blue);
+  border-color: transparent;
 }
 
 .agreement-link {
