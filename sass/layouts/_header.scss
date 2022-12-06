@@ -1,4 +1,4 @@
-.header__logo {
+.logo {
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -15,56 +15,16 @@
 
 }
 
-.header__flex {
+.flex {
     display: flex;
     align-items: center;
 }
+
 
 .header {
     border: 1px solid #ECECEC;
 }
-.nav-list {
-    display: flex;
-    gap: 50px;
-}
 
-.link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--text-main-color);
-    display: block;
-    &:hover,
-    &:focus,
-    &.active {
-    color: var(--blue);
-    font-size: 14px;
-}
-    &.active::after {
-    content: '';
-    width: 100%;
-    height: 4px;
-    background: #2196F3;
-    border-radius: 2px;
-    position: absolute;
-    bottom: -1px;
-    left: 0px;
-}
-
-}
-
-.nav-list-item {
-    position: relative;
-}
-
-.header .contact-list {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    margin-left: auto;
-
-}
 .header .contact-list {
     display: flex;
     align-items: center;
@@ -77,3 +37,70 @@
     padding: 32px 0px;
 }
 
+.contact .icon-envelope,
+.contact .icon-smartphone {
+    fill: var(--grey);
+    margin-right: 10px;
+}
+
+.contact:hover .icon-envelope,
+.contact:focus .icon-envelope,
+.contact:hover .icon-smartphone,
+.contact:focus .icon-smartphone {
+    fill: var(--blue);
+}
+
+.contact {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--grey);
+    transition: fill var(--trans-n-250), background-color var(--trans-n-250);
+    display: flex;
+    align-items: center;
+
+}
+
+.contact:hover,
+.contact:focus {
+    color: var(--blue);
+}
+
+.nav-list {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-list-item {
+    position: relative;
+}
+
+.link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-main-color);
+    display: block;
+      
+}
+
+.link:hover,
+.link:focus,
+.link.active {
+    color: var(--blue);
+    font-size: 14px;
+}
+
+
+.link.active::after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: #2196F3;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+}
