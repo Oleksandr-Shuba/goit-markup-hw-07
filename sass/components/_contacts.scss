@@ -7,12 +7,14 @@
     transition: fill var(--trans-n-250), background-color var(--trans-n-250);
     display: flex;
     align-items: center;
+
+    &:hover,
+    &:focus {
+        color: var(--blue);
+    }
 }
 
-.contact:hover,
-.contact:focus {
-    color: var(--blue);
-}
+
 
 .contact .icon-envelope,
 .contact .icon-smartphone {

@@ -210,9 +210,7 @@ a {
   display: flex;
   align-items: center;
 }
-
-.contact:hover,
-.contact:focus {
+.contact:hover, .contact:focus {
   color: var(--blue);
 }
 
