@@ -181,14 +181,10 @@ a {
   color: var(--text-main-color);
   display: block;
 }
-
-.link:hover,
-.link:focus,
-.link.active {
+.link:hover, .link:focus, .link.active {
   color: var(--blue);
   font-size: 14px;
 }
-
 .link.active::after {
   content: "";
   width: 100%;
