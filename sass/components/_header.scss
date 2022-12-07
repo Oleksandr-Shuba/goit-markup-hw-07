@@ -15,7 +15,7 @@
 
 }
 
-.flex {
+.header-container {
     display: flex;
     align-items: center;
 }
@@ -23,49 +23,23 @@
 
 .header {
     border: 1px solid #ECECEC;
+
+    .contact-list {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        margin-left: auto;
+    }
+
+    .contact-list-item {
+        .contact {
+            padding: 32px 0px;
+        }
+
+    }
 }
 
-.header .contact-list {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    margin-left: auto;
 
-}
-
-.header .contact-list-item {
-    padding: 32px 0px;
-}
-
-.contact .icon-envelope,
-.contact .icon-smartphone {
-    fill: var(--grey);
-    margin-right: 10px;
-}
-
-.contact:hover .icon-envelope,
-.contact:focus .icon-envelope,
-.contact:hover .icon-smartphone,
-.contact:focus .icon-smartphone {
-    fill: var(--blue);
-}
-
-.contact {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--grey);
-    transition: fill var(--trans-n-250), background-color var(--trans-n-250);
-    display: flex;
-    align-items: center;
-
-}
-
-.contact:hover,
-.contact:focus {
-    color: var(--blue);
-}
 
 .nav-list {
     display: flex;

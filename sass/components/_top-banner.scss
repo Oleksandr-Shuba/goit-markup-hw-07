@@ -1,5 +1,14 @@
-.top-banner h1 {
+.top-banner .top-banner-title {
     color: var(--white);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white);
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 
@@ -13,10 +22,11 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     & .btn-blue:hover,
     & .btn-blue:focus {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}  
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
 }
 
 
@@ -34,30 +44,12 @@
     transition: color var(--trans-n-250), background-color var(--trans-n-250);
 }
 
-
-
-
-
-.top-banner .top-banner-title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--white);
-    display: block;
-    text-align: center;
-    margin-bottom: 30px;
-
-
-}
-
-
 .top-banner-specific .top-banner-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    padding-top: 30px;
     text-transform: uppercase;
     color: var(--text-main-color);
 }
@@ -67,15 +59,12 @@
     gap: 30px;
 }
 
-
 .top-banner-item .icon {
     background-color: #F5F4FA;
     border-radius: 4px;
     text-align: center;
     padding: 25px 0px;
 }
-
-
 
 .top-banner-text {
     font-weight: 400;
@@ -84,8 +73,4 @@
     letter-spacing: 0.03em;
     color: var(--grey);
     margin-top: 10px;
-}
-
-.top-banner-specific .top-banner-title {
-    padding-top: 30px;
 }

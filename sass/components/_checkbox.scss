@@ -33,6 +33,7 @@
     width: 16px;
     height: 15px;
     fill: var(--white);
+    border-radius: 3px;
     cursor: pointer;
     border: 2px solid var(--text-main-color);
     transition: color var(--trans-n-250), background-color var(--trans-n-250);

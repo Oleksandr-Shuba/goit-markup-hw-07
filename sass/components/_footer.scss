@@ -75,6 +75,7 @@
 .footer .soc-link:focus {
     color: var(--white);
     background: var(--blue);
+    transition: color var(--trans-n-250), background-color var(--trans-n-250);
 }
 .subscription-title {
     font-weight: 700;

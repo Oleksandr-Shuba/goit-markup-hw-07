@@ -16,16 +16,6 @@ body {
   color: var(--text-main-color);
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
 h1,
 h2,
 h3,
@@ -80,7 +70,7 @@ a {
   color: #000000;
 }
 
-.flex {
+.header-container {
   display: flex;
   align-items: center;
 }
@@ -88,45 +78,14 @@ a {
 .header {
   border: 1px solid #ECECEC;
 }
-
 .header .contact-list {
   display: flex;
   align-items: center;
   gap: 50px;
   margin-left: auto;
 }
-
-.header .contact-list-item {
+.header .contact-list-item .contact {
   padding: 32px 0px;
-}
-
-.contact .icon-envelope,
-.contact .icon-smartphone {
-  fill: var(--grey);
-  margin-right: 10px;
-}
-
-.contact:hover .icon-envelope,
-.contact:focus .icon-envelope,
-.contact:hover .icon-smartphone,
-.contact:focus .icon-smartphone {
-  fill: var(--blue);
-}
-
-.contact {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--grey);
-  transition: fill var(--trans-n-250), background-color var(--trans-n-250);
-  display: flex;
-  align-items: center;
-}
-
-.contact:hover,
-.contact:focus {
-  color: var(--blue);
 }
 
 .nav-list {
@@ -167,18 +126,20 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--grey);
-  transition: fill var(--trans-n-250), background-color var(--trans-n-250);
+  transition: color var(--trans-n-250);
   display: flex;
   align-items: center;
 }
 .contact:hover, .contact:focus {
   color: var(--blue);
+  transition: color var(--trans-n-250);
 }
 
 .contact .icon-envelope,
 .contact .icon-smartphone {
   fill: var(--grey);
   margin-right: 10px;
+  transition: fill var(--trans-n-250), background-color var(--trans-n-250);
 }
 
 .contact:hover .icon-envelope,
@@ -186,6 +147,7 @@ a {
 .contact:hover .icon-smartphone,
 .contact:focus .icon-smartphone {
   fill: var(--blue);
+  transition: fill var(--trans-n-250), background-color var(--trans-n-250);
 }
 
 .soc-item {
@@ -206,13 +168,16 @@ a {
 }
 .soc-link:hover, .soc-link:focus {
   background-color: var(--blue);
+  transition: color var(--trans-n-250), background-color var(--trans-n-250);
 }
 
 .soc-icon {
   fill: #AFB1B8;
+  transition: color var(--trans-n-250), background-color var(--trans-n-250);
 }
 .soc-link:hover .soc-icon, .soc-link:focus .soc-icon {
   fill: var(--white);
+  transition: color var(--trans-n-250), background-color var(--trans-n-250);
 }
 
 .footer .container {
@@ -288,6 +253,7 @@ a {
 .footer .soc-link:focus {
   color: var(--white);
   background: var(--blue);
+  transition: color var(--trans-n-250), background-color var(--trans-n-250);
 }
 
 .subscription-title {
@@ -638,6 +604,7 @@ a {
   width: 16px;
   height: 15px;
   fill: var(--white);
+  border-radius: 3px;
   cursor: pointer;
   border: 2px solid var(--text-main-color);
   transition: color var(--trans-n-250), background-color var(--trans-n-250);
@@ -731,8 +698,17 @@ a {
   fill: var(--blue);
 }
 
-.top-banner h1 {
+.top-banner .top-banner-title {
   color: var(--white);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .top-banner {
@@ -764,23 +740,12 @@ a {
   transition: color var(--trans-n-250), background-color var(--trans-n-250);
 }
 
-.top-banner .top-banner-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--white);
-  display: block;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
 .top-banner-specific .top-banner-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  padding-top: 30px;
   text-transform: uppercase;
   color: var(--text-main-color);
 }
@@ -804,10 +769,6 @@ a {
   letter-spacing: 0.03em;
   color: var(--grey);
   margin-top: 10px;
-}
-
-.top-banner-specific .top-banner-title {
-  padding-top: 30px;
 }
 
 .activity-title,

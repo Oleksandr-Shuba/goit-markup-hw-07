@@ -4,13 +4,14 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--grey);
-    transition: fill var(--trans-n-250), background-color var(--trans-n-250);
+    transition: color var(--trans-n-250);
     display: flex;
     align-items: center;
 
     &:hover,
     &:focus {
         color: var(--blue);
+        transition: color var(--trans-n-250);
     }
 }
 
@@ -20,6 +21,7 @@
 .contact .icon-smartphone {
     fill: var(--grey);
     margin-right: 10px;
+    transition: fill var(--trans-n-250), background-color var(--trans-n-250);
 }
 
 .contact:hover .icon-envelope,
@@ -27,4 +29,5 @@
 .contact:hover .icon-smartphone,
 .contact:focus .icon-smartphone {
     fill: var(--blue);
+    transition: fill var(--trans-n-250), background-color var(--trans-n-250);
 }
